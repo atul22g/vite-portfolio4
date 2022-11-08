@@ -40,6 +40,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 20px;
   }
 
   .btn {

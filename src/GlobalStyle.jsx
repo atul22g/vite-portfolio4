@@ -132,7 +132,7 @@ li {
 /* em  */
 /* 1500px */
 
-//998px
+${"" /* //998px */}
 @media (max-width:${({ theme }) => theme.media.tab}) {
       .container{
         padding: 0 3.2rem;
@@ -155,6 +155,12 @@ li {
 
       .grid-two-column, .grid-three-column, .grid-four-column{
         grid-template-columns: 1fr;
+      }
+     
+
+
+      .section-hero-data {
+        align-items: center;
       }
 }
 

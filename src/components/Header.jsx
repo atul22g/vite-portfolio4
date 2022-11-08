@@ -7,7 +7,8 @@ const Header = () => {
   return (
     <MainHeader>
       <NavLink to="/">
-        <img src="./images/logo.png" alt="logo" className="logo" />
+        {/* <img src="./images/logo.png" alt="logo" className="logo" /> */}
+        <span className="logo">Portfolio4</span>
       </NavLink>
       <Navbar />
     </MainHeader>
@@ -22,9 +23,14 @@ const MainHeader = styled.header`
   justify-content: space-between;
   align-items: center;
 
+  
   .logo {
     height: auto;
     max-width: 30%;
+    font-size: 4rem;
+    font-style: oblique;
+    font: optional;
+    font-family: Georgia, 'Times New Roman', Times, serif
   }
 `;
 
