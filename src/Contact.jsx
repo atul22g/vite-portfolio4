@@ -51,7 +51,7 @@ const Contact = () => {
       <div className="container">
         <div className="contact-form">
           <form
-            action="#"
+            action="/"
             method="POST"
             className="contact-inputs"
           >

@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
 
           <div className="contact-short-btn">
-            <NavLink to="/">
+            <NavLink to="/React-portfolio4/">
               <Button>Get Started</Button>
             </NavLink>
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
           {/* 2nd column */}
           <div className="footer-subscribe">
             <h3>Subscribe to get important updates</h3>
-            <form action="#">
+            <form action="/">
               <input
                 type="email"
                 required

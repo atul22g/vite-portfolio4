@@ -18,7 +18,7 @@ const HeroSection = () => {
             stack Developer, youtuber and freelancer.
           </p>
           <Button className="btn hireme-btn">
-            <NavLink to="/contact"> hire me </NavLink>
+            <NavLink to="/React-portfolio4/contact"> hire me </NavLink>
           </Button>
         </div>
 

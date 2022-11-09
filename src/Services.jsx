@@ -12,18 +12,17 @@ const Services = () => {
       <h2 className="common-heading">Our Services</h2>
       <div className="container grid grid-three-column">
         {services.map((curElem) => {
-          const { id, name, image, description } = curElem;
+          const { id, title, img, src} = curElem;
           return (
             <div key={id} className="card">
               <figure>
-                <img src={image} alt={name} />
+                <img src={img} alt={title} />
               </figure>
               <div className="card-data">
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <NavLink to="/service">
-                  <Button className="btn">Read More</Button>
-                </NavLink>
+                <h3>{title}</h3>
+                <a href={src}>
+                  <Button className="btn">Source Code</Button>
+                </a>
               </div>
             </div>
           );
@@ -49,8 +48,9 @@ const Wrapper = styled.section`
 
     h3 {
       margin: 2rem 0;
-      font-weight: 300;
+      font-weight: 500;
       font-size: 2.4rem;
+      text-align: center;
     }
     .btn {
       margin: 2rem auto;

@@ -3,7 +3,7 @@ import reducer from "./reducer";
 
 const AppContext = React.createContext();
 
-const API = "";
+const API = "https://atugatran.github.io/Atugatranapi/data.json";
 
 const intialState = {
   name: "",
