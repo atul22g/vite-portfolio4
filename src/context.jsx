@@ -35,11 +35,11 @@ const AppProvider = ({ children }) => {
   };
 
   //  to get the api data
-  const getServices = async (url) => {
+  const getProjects = async (url) => {
     try {
       const res = await fetch(url);
       const data = await res.json();
-      dispatch({ type: "GET_SERVICES", payload: data });
+      dispatch({ type: "GET_PROJECTS", payload: data });
     } catch (error) {
       // console.log(error);
     }
@@ -47,7 +47,7 @@ const AppProvider = ({ children }) => {
 
   // to call the api
   useEffect(() => {
-    getServices(API);
+    getProjects(API);
   }, []);
 
   return (

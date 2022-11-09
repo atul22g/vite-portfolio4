@@ -1,7 +1,7 @@
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
-import Services from "./Services";
+import Projects from "./Projects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -41,7 +41,7 @@ const App = () => {
         <Routes>
           <Route path="/React-portfolio4/" element={<Home />} />
           <Route path="/React-portfolio4/about" element={<About />} />
-          <Route path="/React-portfolio4/service" element={<Services />} />
+          <Route path="/React-portfolio4/Projects" element={<Projects />} />
           <Route path="/React-portfolio4/contact" element={<Contact />} />
           {/* <Route path="*" element={<Error />} /> */}
         </Routes>

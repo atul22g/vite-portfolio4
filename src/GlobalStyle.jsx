@@ -157,10 +157,14 @@ ${"" /* //998px */}
         grid-template-columns: 1fr;
       }
      
-
-
       .section-hero-data {
         align-items: center;
+      }
+      .hero-heading {
+        text-align: center;
+      }
+      .hero-para {
+       text-align: center;
       }
 }
 

@@ -34,7 +34,7 @@ const HeroSection = () => {
 };
 
 const Wrapper = styled.section`
-  padding: 9rem 0;
+  padding: 9rem 3rem;
 
   .section-hero-data {
     display: flex;

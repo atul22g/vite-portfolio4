@@ -15,7 +15,7 @@ const reducer = (state, action) => {
     };
   }
 
-  if (action.type === "GET_SERVICES") {
+  if (action.type === "GET_PROJECTS") {
     return {
       ...state,
       services: action.payload,

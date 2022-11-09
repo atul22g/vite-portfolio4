@@ -139,8 +139,8 @@ const Navbar = () => {
             <NavLink
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
-              to="/React-portfolio4/service">
-              Services
+              to="/React-portfolio4/Projects">
+              Projects
             </NavLink>
           </li>
           <li>

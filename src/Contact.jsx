@@ -76,6 +76,7 @@ const Contact = () => {
               cols="30"
               rows="6"
               autoComplete="off"
+              placeholder="Enter Your Douth"
               required
             ></textarea>
 
