@@ -144,6 +144,11 @@ const Wrapper = styled.section`
       }
     }
   }
+  @media (max-width:${({ theme }) => theme.media.tab}) {
+    .contact-short {
+      max-width: 80vw;
+  }
+  }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .contact-short {

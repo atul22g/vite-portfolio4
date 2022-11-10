@@ -45,6 +45,7 @@ const Navbar = () => {
       display: none;
     }
 
+
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       .mobile-navbar-btn {
         display: inline-block;
@@ -65,16 +66,13 @@ const Navbar = () => {
         top: 0;
         left: 0;
         background-color: #fff;
-
-        display: flex;
+        display: none;
         justify-content: center;
         align-content: center;
         flex-direction: column;
         text-align: center;
-
         transform: translateX(100%);
-
-        visibility: hidden;
+        ${'' /* visibility: hidden; */}
         opacity: 0;
 
         li {
@@ -107,7 +105,8 @@ const Navbar = () => {
       }
 
       .active .navbar-list {
-        visibility: visible;
+        ${'' /* visibility: visible; */}
+        display: flex;
         opacity: 1;
         transform: translateX(0);
         z-index: 999;

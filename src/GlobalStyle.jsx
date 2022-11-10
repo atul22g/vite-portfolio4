@@ -138,7 +138,7 @@ ${"" /* //998px */}
         padding: 0 3.2rem;
       }
 
-        .grid-three-column {
+        .grid-three-column, .grid-four-column {
       grid-template-columns: 1fr 1fr;
     }
 }
