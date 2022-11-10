@@ -135,7 +135,7 @@ li {
 ${"" /* //998px */}
 @media (max-width:${({ theme }) => theme.media.tab}) {
   html{
-        font-size: 70%;
+        font-size: 60%;
       }
 
       .container{

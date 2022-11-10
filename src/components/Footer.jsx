@@ -141,6 +141,7 @@ const Wrapper = styled.section`
     }
   }
   @media (max-width: ${({ theme }) => theme.media.tab}) {
+
     .contact-short {
       max-width: 80vw;
       padding: 2rem 0rem;
