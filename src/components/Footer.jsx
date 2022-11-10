@@ -56,9 +56,7 @@ const Footer = () => {
                 <FaInstagram className="icons" />
               </div>
               <div>
-                <a
-                  href="#"
-                  target="_blank">
+                <a href="#" target="_blank">
                   <FaYoutube className="icons" />
                 </a>
               </div>
@@ -76,9 +74,7 @@ const Footer = () => {
         <div className="footer-bottom--section">
           <hr />
           <div className="container grid grid-two-column">
-            <p>
-              @{new Date().getFullYear()} Portfolio4 . All Rights Reserved
-            </p>
+            <p>@{new Date().getFullYear()} Portfolio4 . All Rights Reserved</p>
             <div>
               <p>PRIVACY POLICY</p>
               <p>TERMS & CONDITIONS</p>
@@ -144,24 +140,25 @@ const Wrapper = styled.section`
       }
     }
   }
-  @media (max-width:${({ theme }) => theme.media.tab}) {
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
     .contact-short {
       max-width: 80vw;
-  }
+      padding: 2rem 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(40%);
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .contact-short {
       max-width: 95vw;
-      padding: 2rem 0rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    }
 
-      .contact-short-btn {
-        text-align: center;
-        justify-self: flex-start;
-      }
+    .contact-short-btn {
+      text-align: center;
+      justify-self: flex-start;
     }
 
     footer .footer-bottom--section {
