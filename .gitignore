@@ -17,12 +17,14 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
-.env
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Env files
+.env
 
 # Local Netlify folder
 .netlify
