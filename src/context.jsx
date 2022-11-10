@@ -3,7 +3,8 @@ import reducer from "./reducer";
 
 const AppContext = React.createContext();
 
-const API = `${import.meta.env.VITE_API_KEY}`;
+// const API = `${import.meta.env.VITE_API_KEY}`;
+const API = `https://bogotas.github.io/_Apis/Projects/index.json`;
 
 const intialState = {
   name: "",
