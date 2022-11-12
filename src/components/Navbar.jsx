@@ -122,7 +122,7 @@ const Navbar = () => {
             <NavLink
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
-              to="/React-portfolio4/">
+              to="/">
               Home
             </NavLink>
           </li>
@@ -130,7 +130,7 @@ const Navbar = () => {
             <NavLink
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
-              to="/React-portfolio4/about">
+              to="/about">
               About
             </NavLink>
           </li>
@@ -138,7 +138,7 @@ const Navbar = () => {
             <NavLink
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
-              to="/React-portfolio4/Projects">
+              to="/Projects">
               Projects
             </NavLink>
           </li>
@@ -146,7 +146,7 @@ const Navbar = () => {
             <NavLink
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
-              to="/React-portfolio4/contact">
+              to="/contact">
               Contact
             </NavLink>
           </li>

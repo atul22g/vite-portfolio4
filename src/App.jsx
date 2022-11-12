@@ -39,10 +39,10 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/React-portfolio4/" element={<Home />} />
-          <Route path="/React-portfolio4/about" element={<About />} />
-          <Route path="/React-portfolio4/Projects" element={<Projects />} />
-          <Route path="/React-portfolio4/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           {/* <Route path="*" element={<Error />} /> */}
         </Routes>
 
