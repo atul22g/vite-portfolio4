@@ -122,7 +122,7 @@ const Navbar = () => {
             <NavLink
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
-              to="//React-portfolio4/">
+              to="/React-portfolio4/">
               Home
             </NavLink>
           </li>
