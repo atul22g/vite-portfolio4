@@ -43,7 +43,7 @@ const App = () => {
           <Route path="/React-portfolio4/about" element={<About />} />
           <Route path="/React-portfolio4/Projects" element={<Projects />} />
           <Route path="/React-portfolio4/contact" element={<Contact />} />
-          {/* <Route path="*" element={<Error />} /> */}
+          <Route path="*" element={<Error />} />
         </Routes>
 
         <Footer />

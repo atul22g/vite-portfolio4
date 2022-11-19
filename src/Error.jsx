@@ -7,7 +7,7 @@ const Error = () => {
   return (
     <Wrapper>
       <img src="../images/error.svg" alt="error" />
-      <NavLink to="/">
+      <NavLink to="/React-portfolio4/">
         <Button className="btn"> Go Back</Button>
       </NavLink>
     </Wrapper>
