@@ -1,5 +1,6 @@
 {
   "name": "portfolio4",
+  "base": "https://atugatran-projects.github.io/React-portfolio4/",
   "private": true,
   "version": "0.0.1",
   "type": "module",

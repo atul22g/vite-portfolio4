@@ -1,51 +1,29 @@
-name: Deploy
+#!/usr/bin/env sh
 
-on:
-  push:
-    branches:
-      - master
+# abort on errors
+set -e
 
-jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
+# build
+npm run build
 
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+# navigate into the build output directory
+cd dist
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
+# place .nojekyll to bypass Jekyll processing
+echo > .nojekyll
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
 
-      - name: Build project
-        run: npm run build
+git init
+git checkout -B master
+git add -A
+git commit -m 'deploy'
 
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
 
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+cd -
